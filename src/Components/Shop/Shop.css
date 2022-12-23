@@ -1,0 +1,87 @@
+.shop{
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 15px;
+}
+.left{
+      display: grid;
+      grid-template-columns: auto auto auto;
+}
+.right{
+      background-color: gray;
+      color: white;
+      height: 100vh;
+      padding: 30px;
+      margin-left: -15px;
+      position: sticky;
+      top: 15px;
+      border-radius: 10px;
+}
+.right h4{
+      text-align: center;
+      margin-top: 50px;
+}
+.para-2{
+      margin-top: 50px;
+}
+.total h3{
+      margin-top: 40px;
+}
+
+@media only screen and (max-width:1300px){
+      .shop{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 30px;
+      }
+      .left{
+            grid-template-columns: auto auto;
+            margin-left: 30px;
+            margin-right: 30px;
+      }
+      .right{
+            margin-right: 40px;
+      }
+}
+@media only screen and (max-width:1100px){
+      .shop{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 30px;
+      }
+      .left{
+            grid-template-columns: auto;
+            margin-left: 30px;
+            margin-right: 30px;
+      }
+      .right{
+            margin-right: 40px;
+      }
+}
+
+@media only screen and (max-width:700px){
+      .shop{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 10px;
+      }
+      .left{
+            grid-template-columns: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+      }
+      .right{
+            margin-right: 10px;
+      }
+}
+
+
+@media only screen and (max-width:600px){
+      .right{
+            padding: 15px;
+      }
+      .right h4{
+            text-align: center;
+            margin-top: 90px;
+      }
+}
